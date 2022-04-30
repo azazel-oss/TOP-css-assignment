@@ -24,10 +24,18 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 3.25rem;
+  text-align: center;
+  color: #1f2937;
+}
+
 img {
   width: 100%;
   max-height: 20em;
   object-fit: cover;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -83,6 +91,27 @@ header .container-flex {
   width: 50%;
 }
 
+.img-container {
+  gap: 1em;
+}
+
+article {
+  text-align: center;
+  color: grey;
+}
+
+.img {
+  border: 5px solid #3882f6;
+  max-height: 10em;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.info {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
 .btn {
   padding: 0.6em 1.5em;
   border-radius: 0.7em;
@@ -91,6 +120,24 @@ header .container-flex {
 .btn-dark {
   background-color: #3882f6;
   color: white;
+}
+
+.accent {
+  background-color: #e5e7eb;
+  font-size: 3.25rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.author {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.accent .container {
+  padding: 1.5em;
 }
 
 main {
