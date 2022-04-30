@@ -30,6 +30,11 @@ h2 {
   color: #1f2937;
 }
 
+h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+
 img {
   width: 100%;
   max-height: 20em;
@@ -48,10 +53,6 @@ a {
   text-decoration: none;
 }
 
-.links {
-  display: flex;
-}
-
 header a {
   margin: 0 1em;
 }
@@ -62,8 +63,11 @@ header a,
   color: #e5e7eb;
 }
 
-header a:hover {
+header a:hover,
+header a:focus {
   color: white;
+  text-decoration: underline;
+  text-underline-offset: 1em;
 }
 
 .container {
@@ -91,6 +95,10 @@ header .container-flex {
   width: 50%;
 }
 
+.hero .btn {
+  margin-top: 1em;
+}
+
 .img-container {
   gap: 1em;
 }
@@ -113,6 +121,7 @@ article {
 }
 
 .btn {
+  display: inline-block;
   padding: 0.6em 1.5em;
   border-radius: 0.7em;
 }
@@ -120,6 +129,12 @@ article {
 .btn-dark {
   background-color: #3882f6;
   color: white;
+  font-weight: bold;
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+  background-color: #1e4685;
 }
 
 .accent {
@@ -138,6 +153,27 @@ article {
 
 .accent .container {
   padding: 1.5em;
+}
+
+.cta {
+  padding: 3em 5em;
+  margin: 6em 10em;
+  background-color: #3882f6;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-radius: 1em;
+}
+
+.btn-outline {
+  color: white;
+  font-weight: bold;
+  border: 3px white solid;
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+  background-color: #1e4685;
 }
 
 main {
